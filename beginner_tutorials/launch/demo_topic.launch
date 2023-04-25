@@ -1,0 +1,10 @@
+<launch>
+	<arg name = "hope"/>
+	<!-- <node name = "talker" pkg = "beginner_tutorials" type = "talker" output = "screen"/>
+
+	<node name = "listener" pkg = "beginner_tutorials" type = "listener" output = "screen"/> -->
+	<node name = "param" pkg = "beginner_tutorials" type = "firstparam.py" output="screen" args = "($arg hope)"/>
+		<param name = "get_frequency_1" type = "int" value = "$(arg hope)" /> 
+
+
+</launch> 
